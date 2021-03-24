@@ -1,6 +1,7 @@
 package com.example.tarotcat.adapter
 
 import android.content.ContentValues.TAG
+import android.graphics.Color
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
@@ -14,8 +15,6 @@ import com.example.tarotcat.model.PagerDTO
 class PagerViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
     var tvTitle : TextView = itemView.findViewById(R.id.tv_title)
     var constraint : ConstraintLayout = itemView.findViewById(R.id.constraint)
-
-
 }
 
 class PagerAdapter(private val pagerList: List<PagerDTO>) : RecyclerView.Adapter<PagerViewHolder>() {
